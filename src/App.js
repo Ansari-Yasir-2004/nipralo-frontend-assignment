@@ -4,10 +4,12 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Industries from "./pages/Industries";
 import Pentakuhl from "./pages/Pentakuhl";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/nipralo-frontend-assignment">
+      <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
