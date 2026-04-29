@@ -1,0 +1,56 @@
+import React from 'react'
+import FAQ from '../../components/FAQ';
+import { industriesCard, industriesFaq } from '../../data';
+import ParallaxCTA from '../../components/ParallaxCTA';
+import IndustriesParallax from "../../assets/images/jpg/industries-parallax.jpeg";
+import "../../assets/styles/industries.css";
+
+const Industries = () => {
+  return (
+    <div>
+      {/* =============== LANDING SECTION ================ */}
+      <section className="industries-landing-section">
+        <div className="flex flex-col justify-center items-center px-6 py-10">
+          <h2 className="has-mask-fill !text-[#000] md:text-[42px] text-[32px]">INDUSTRIES</h2>
+          <p className="md:text-[18px] mt-2 md:w-[30%] w-[100%] text-center">
+            Over the past two decades we have been coming up with innovative ways to enable global trade across various industries.
+          </p>
+        </div>
+
+        <div className="max-w-[1300px] flex flex-wrap justify-evenly mx-auto">
+          {industriesCard.map((card) => (
+            <div key={card.id} className="md:h-[350px] md:w-[350px] h-[300px] w-[275px] flex justify-center items-center bg-transparent m-10 relative">
+              <div className="industries-card w-full h-full rounded-[16px]">
+                <div className="flex flex-col justify-center h-full gap-2 px-4 my-auto">
+                  <div className="flex items-center gap-3">
+                    <div className="w-max p-3 rounded-full border border-vivid-yangelo" style={{ background: "linear-gradient(344deg, rgba(255, 255, 255, 0) 0%, rgba(240, 108, 48, 0.796) 100%)" }}>
+                      <img src={card.icon} alt="Pharmaceuticals" className='w-auto h-12' />
+                    </div>
+                    <h3 className="text-white text-xl md:text-2xl font-bold">{card.head}</h3>
+                  </div>
+                  <p className="text-white mt-2 md:text-sm">{card.para}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =============== FAQ SECTION ================ */}
+      <FAQ
+        para={"Find answers to common industry questions, ensuring clarity on our services, processes, and solutions."}
+        data={industriesFaq}
+      />
+
+      {/* =============== PARALLAX SECTION ================ */}
+      <ParallaxCTA
+        title={"Tailored Logistics for Every Industry"}
+        subtitle={"Delivering tailored supply chain solutions to meet the unique needs of industries worldwide."}
+        buttonText={"Contact Us Today"}
+        image={IndustriesParallax}
+      />
+    </div>
+  )
+}
+
+export default Industries;

@@ -1,0 +1,27 @@
+.home-about-us-bg-img {
+  background-image: url(../../assets/images/jpg/home-about-us-bg-img.jpg);
+}
+
+.home-philosophy-bg-img,
+.home-achievement-bg-img,
+.home-certifications-bg-img,
+.home-global-footprint-bg-img {
+  background-image: url(../../assets/images/png/home-philosophy-bg-img.png);
+}
+
+.card-stack-bg-img {
+  background-image: url(../../assets/images/jpg/card-stack-img.jpg);
+  box-shadow: 0 8px 24px #959da533;
+}
+
+.review-card,
+.award-card {
+  box-shadow: 0 8px 24px #959da533;
+}
+
+.review-sticky {
+  position: sticky;
+  top: 50%;
+  /* bottom: 50%; */
+  transform: translateY(-50%);
+}
