@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nipralo-frontend-assignment/static/css/main.c3720edc.css",
-    "main.js": "/nipralo-frontend-assignment/static/js/main.d1095957.js",
+    "main.js": "/nipralo-frontend-assignment/static/js/main.95a361fe.js",
     "static/js/453.c56b6855.chunk.js": "/nipralo-frontend-assignment/static/js/453.c56b6855.chunk.js",
     "static/media/home-video.mp4": "/nipralo-frontend-assignment/static/media/home-video.4efd1e9ca70f5345adeb.mp4",
     "static/media/pentakuhl-video.mp4": "/nipralo-frontend-assignment/static/media/pentakuhl-video.ead38b34c3a55158f8f5.mp4",
@@ -32,11 +32,11 @@
     "static/media/slick.woff": "/nipralo-frontend-assignment/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/nipralo-frontend-assignment/index.html",
     "main.c3720edc.css.map": "/nipralo-frontend-assignment/static/css/main.c3720edc.css.map",
-    "main.d1095957.js.map": "/nipralo-frontend-assignment/static/js/main.d1095957.js.map",
+    "main.95a361fe.js.map": "/nipralo-frontend-assignment/static/js/main.95a361fe.js.map",
     "453.c56b6855.chunk.js.map": "/nipralo-frontend-assignment/static/js/453.c56b6855.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3720edc.css",
-    "static/js/main.d1095957.js"
+    "static/js/main.95a361fe.js"
   ]
 }
