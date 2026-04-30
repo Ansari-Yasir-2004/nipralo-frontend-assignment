@@ -9,17 +9,18 @@ import HomeWhyUsIcon3 from "../../assets/images/png/home-why-us-icon-3.png"
 import LufthansaCargo from "../../assets/images/png/lufthansa-cargo.png"
 import SunPharma from "../../assets/images/png/sun-pharma.png"
 import WatsonPharmaceuticals from "../../assets/images/png/watson-pharmaceuticals.png"
+import { SwiperSlide } from 'swiper/react'
 import GlobalMapImg from "../../assets/images/webp/map.webp"
+import { awardCard, certificationSliderImg, reviewsCard } from '../../data'
+import CustomSwiper from '../../components/CustomSwiper'
 import "../../assets/styles/home.css"
-import SlickAutoPlay from '../../components/SlickAutoPlay'
-import { awardCard, certificationSliderImg } from '../../data'
 
 const Home = () => {
   return (
     <div>
       {/* =============== LANDING SECTION ================ */}
       <section className='landing-section relative overflow-hidden'>
-        <div className="w-full h-[calc(100vh-64px)]">
+        <div className="w-full h-auto lg:h-[calc(100vh-64px)]">
           <video
             src={LandingSectionVideo}
             autoPlay
@@ -28,16 +29,16 @@ const Home = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <a href='#home-about-us' className="absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer">
+        <a href='#home-about-us' className="w-[120px] md:w-[300px] flex justify-center absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer">
           <img src={LandingSectionArrowImg} alt="Landing Section Arrow" />
         </a>
       </section>
 
       {/* =============== ABOUT US SECTION ================ */}
-      <section className="home-about-us-section h-[100vh] relative" id='home-about-us'>
-        <div className="home-about-us-bg-img h-full bg-top bg-cover">
+      <section className="home-about-us-section relative" id='home-about-us'>
+        <div className="home-about-us-bg-img h-[70vh] md:h-[100vh] bg-top bg-cover">
           <img src={HomeAboutUsSmokeImg} alt="" className='absolute top-0 left-0 w-full h-[120vh]' />
-          <div className="w-[60%] flex items-center gap-[40px] mx-auto pt-6 relative">
+          <div className="w-[85%] lg:w-[70%] xl:w-[60%] flex flex-col md:flex-row items-center md:gap-[40px] mx-auto pt-6 relative">
             <div className="w-[60%] flex flex-col items-center">
               <h2 className="py-3 font-bold text-vivid-yangelo">ABOUT US</h2>
               <p className="py-3 font-bold text-vivid-yangelo border-t-vivid-yangelo border-t-[3px]">PENTA FREIGHT</p>
@@ -56,7 +57,7 @@ const Home = () => {
       {/* =============== PHILOSOPHY SECTION ================ */}
       <section className="home-philosophy-section">
         <div className="home-philosophy-bg-img bg-no-repeat bg-cover py-10 bg-fiord">
-          <div className="w-[60%] flex flex-col justify-center items-center text-center mx-auto">
+          <div className="w-[85%] md:w-[60%] flex flex-col justify-center items-center text-center mx-auto">
             <h2 className="mb-6 md:text-[36px] lg:text-[36px] text-[28px] font-[500] text-vivid-yangelo">
               Our Philosophy
             </h2>
@@ -77,7 +78,7 @@ const Home = () => {
 
         {/* =============== SERVICE PART ================ */}
         <div className="max-w-[1200px] mx-auto">
-          <div className="flex justify-between items-center px-7 my-10">
+          <div className="flex flex-col md:flex-row justify-between items-center px-7 my-10">
             <div className="flex-col md:flex-row justify-between items-start w-full">
               <div className="flex items-center mb-4 md:mb-6">
                 <span className="black-dot"></span>
@@ -94,11 +95,10 @@ const Home = () => {
         </div>
 
         {/* =============== CARD STACK PART ================ */}
-        <div className="max-w-[1200px] mx-auto px-1">
-          <div
-            className="card-stack-bg-img h-[500px] bg-cover bg-center rounded-[30px]">
-            <div className=""></div>
-            <div className="w-1/2 flex flex-col justify-center px-10 py-10 ml-auto">
+        <div className="max-w-[1200px] mx-auto px-6 lg:px-14 xl:px-1">
+          <div className="card-stack-bg-img xl:h-[500px] bg-cover bg-left md:bg-center rounded-[30px] relative">
+            <div className="absolute inset-0 bg-black opacity-50 rounded-3xl md:hidden"></div>
+            <div className="md:w-1/2 flex flex-col justify-center text-white md:text-black px-10 py-10 ml-auto relative">
               <h3 className="text-[24px] md:text-[32px] mb-2 lg:mb-5">Custom Broking</h3>
 
               <p className="md:w-10/12 mb-2 lg:mb-3 text-[14px] md:text-[16px]">Our licensed customs agents know domestic and international regulations.</p>
@@ -174,13 +174,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* =============== ACHIEVEMENTS SECTION ================ */}
-      <section className="home-achievement-section">
+      < section className="home-achievement-section" >
         <div className="home-achievement-bg-img bg-no-repeat bg-cover bg-fiord">
           <div className="flex flex-col lg:flex-row md:gap-x-14 max-w-[1200px] mx-auto justify-between items-center md:px-10 lg:px-6 px-6 py-20">
-            <div className="w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
+            <div className="md:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
               <h2 className="mb-6 md:text-[36px] lg:text-[36px] text-[28px] font-[500] text-vivid-yangelo">
                 Our Achievements
               </h2>
@@ -189,7 +189,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="w-[60%] flex flex-col lg:flex-row justify-around lg:justify-around gap-10 lg:gap-20">
+            <div className="w-full md:w-[60%] flex flex-col lg:flex-row justify-around lg:justify-around gap-10 lg:gap-20">
               <div className="flex flex-col items-center gap-y-10 lg:items-start">
                 <div className="text-center lg:text-left">
                   <div className="lg:text-[56px] text-[32px] text-white font-semibold">7+</div>
@@ -214,15 +214,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* =============== REVIEWS SECTION ================ */}
-      <section className="home-review-section">
+      < section className="home-review-section" >
         <div className="max-w-[1200px] mx-auto my-20">
-          <div className="flex justify-between items-center px-7 my-10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-0 px-7 my-10">
 
             {/* =============== REVIEWS PART ================ */}
-            <div className="w-[35%] review-sticky">
+            <div className="md:w-[35%] review-sticky">
               <div className="flex items-center mb-4 md:mb-6">
                 <span className="black-dot"></span>
                 <span className="text-[20px] px-5 py-[2px] rounded-3xl border border-smooth-grey">Reviews</span>
@@ -235,8 +235,8 @@ const Home = () => {
               <p>Explore what industry leaders and long-term partners say about our commitment to excellence and innovation.</p>
             </div>
 
-            {/* =============== REVIEWS CARDS PART ================ */}
-            <div className="w-[55%] flex flex-wrap justify-between">
+            {/* =============== REVIEWS CARDS PART TILL TABS SIZE ================ */}
+            <div className="w-[60%] lg:w-[55%] md:flex flex-wrap justify-between hidden">
               <div className="w-[45%] h-max review-card px-6 py-8 rounded-[16px]">
                 <img src={LufthansaCargo} alt="Lufthansa Cargo Icon" className='mx-auto mb-6' />
                 <p className="max-h-[90%] text-center">
@@ -291,12 +291,30 @@ const Home = () => {
                 <p className="text-center">Vice President Asia Pacific</p>
               </div>
             </div>
+
+            {/* =============== REVIEWS CARDS PART FOR MOBILE SIZE ================ */}
+            <div className="block md:hidden w-full">
+              <CustomSwiper slidesPerView={1} navigation spaceBetween={10} speed={500}>
+                {reviewsCard.map((review) => (
+                  <SwiperSlide key={review.id}>
+                    <div className="review-card px-6 py-8 rounded-[16px] border">
+                      <img src={review.img} alt="Lufthansa Cargo Icon" className='mx-auto mb-6' />
+                      <h4 className="text-[20px] font-[400] mt-4 text-center">{review.name}</h4>
+                      <p className="text-center text-bold-grey mb-6">{review.designation}</p>
+                      <p className="max-h-[90%] text-center text-bold-grey">
+                        {review.para}
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </CustomSwiper>
+            </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* =============== CERTIFICATIONS SECTION ================ */}
-      <section className="home-certifications-section">
+      < section className="home-certifications-section" >
         <div className="home-certifications-bg-img bg-no-repeat bg-cover py-10 bg-fiord">
           <div className="max-w-[1200px] mx-auto mt-[30px]">
             <div className="text-center">
@@ -307,17 +325,17 @@ const Home = () => {
                 Certified excellence, ensuring compliance, quality, and global logistics reliability.
               </p>
               <div className="mt-10">
-                <SlickAutoPlay>
+                <CustomSwiper autoplay={true} loop={true} spaceBetween={20} slidesPerView={"auto"} delay={0} speed={3500}>
                   {certificationSliderImg.map((img) => (
-                    <div key={img.id} >
-                      <div className="w-[250px] h-[250px] bg-white flex items-center justify-center relative rounded-2xl flex-shrink-0 px-8 py-6">
+                    <SwiperSlide key={img.id}>
+                      <div className="w-[140px] md:w-[250px] h-[140px] md:h-[250px] bg-white flex items-center justify-center gap-4 relative rounded-2xl p-5 md:px-8 md:py-6">
                         <div className="h-full flex flex-row items-center justify-center mt-6">
                           <img src={img.img} alt="accai logo" />
                         </div>
                       </div>
-                    </div>
+                    </SwiperSlide>
                   ))}
-                </SlickAutoPlay>
+                </CustomSwiper>
               </div>
             </div>
           </div>
@@ -325,7 +343,7 @@ const Home = () => {
       </section >
 
       {/* =============== AWARDS SECTION ================ */}
-      <section className="home-awards-section">
+      < section className="home-awards-section" >
         <div className="py-5">
           <div className="max-w-[1200px] mx-auto mt-[60px] lg:px-6 md:px-10 px-6">
             <div className="">
@@ -356,21 +374,21 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* =============== GLOBAL FOOTPRINT SECTION ================ */}
-      <section className="home-global-footprint-section">
+      < section className="home-global-footprint-section" >
         <div className="home-global-footprint-bg-img bg-no-repeat bg-cover py-10 bg-fiord">
           <div className="max-w-[1200px] mx-auto text-center">
             <h2 className="mb-6 md:text-[36px] lg:text-[36px] text-[28px] font-[500] text-vivid-yangelo">
               Our Global Footprint
             </h2>
             <div className="">
-              <img src={GlobalMapImg} alt="global footprint map" className='' />
+              <img src={GlobalMapImg} alt="global footprint map" className=' lg:w-[70%] lg:mx-auto opacity-100 object-cover' />
             </div>
           </div>
         </div>
-      </section>
+      </section >
     </div >
   )
 }

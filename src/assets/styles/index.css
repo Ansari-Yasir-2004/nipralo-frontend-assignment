@@ -71,3 +71,8 @@ html {
 sub {
   top: -0.5em;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+}

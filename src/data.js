@@ -35,6 +35,39 @@ import IndustriesPackaging from "./assets/images/png/industries-packaging.png"
 import IndustriesTimeCriticalCargo from "./assets/images/png/industries-time-critical-cargo.png"
 import IndustriesGlassware from "./assets/images/png/industries-Glassware.png"
 import IndustriesElectronics from "./assets/images/png/industries-electronics.png"
+import WatsonPharmaceuticalsLogo from "./assets/images/png/watson-pharmaceuticals.png"
+import SunPharmaLogo from "./assets/images/png/sun-pharma.png"
+
+export const reviewsCard = [
+  {
+    id: 1,
+    img: LufthansaCargoLogo,
+    name: "Frank Naeve",
+    designation: "Vice President Asia Pacific",
+    para: "“Penta Freight India was founded 25 years ago and has been a highly valued and reliable partner of Lufthansa Cargo since then. We know that they always stand by their commitment, which makes a meaningful difference to our business. Their continuous high focus on customer service and their strive towards individual solutions are key to staying dynamic and competitive in the market. Penta Freight is a pioneer in various ways: They were amongst the first forwarders to become our Premium Partner and so far they are the only one in India.... ”"
+  },
+  {
+    id: 2,
+    img: WatsonPharmaceuticalsLogo,
+    name: "Ryan Veigas",
+    designation: "Vice President - Supply Chain & Procurement",
+    para: "“Penta Freight has been one of our export LSP’s for several years and our experience with them has been consistently good. Besides having strong relationships with airlines to obtain competitive rates, Penta Freight has the ability to get things done in a compliant manner. In addition, an excellent service level and professional relationship was maintained throughout the course of export operations. Best wishes for all success. ”"
+  },
+  {
+    id: 3,
+    img: SunPharmaLogo,
+    name: "Makarand Sane",
+    designation: "General Manager Head - Export Logistics",
+    para: "“We highly regard Penta Freight's professionalism and knowledge in the freight field.  Their team takes the work load and worry off our shoulders. For about two decades we have been satisfied by the flexible, reliable and trustworthy service and excellent quality of work. One key feature that Penta Freight portrays is that they understand our needs and put their best efforts in making thing possible. They have continued to innovate and change with the freight industry.... ”"
+  },
+  {
+    id: 4,
+    img: LufthansaCargoLogo,
+    name: "Frank Naeve",
+    designation: "Vice President Asia Pacific",
+    para: "“Penta Freight India was founded 25 years ago and has been a highly valued and reliable partner of Lufthansa Cargo since then. We know that they always stand by their commitment, which makes a meaningful difference to our business. Their continuous high focus on customer service and their strive towards individual solutions are key to staying dynamic and competitive in the market. Penta Freight is a pioneer in various ways: They were amongst the first forwarders to become our Premium Partner and so far they are the only one in India.... ”"
+  },
+]
 
 export const certificationSliderImg = [
   { id: 1, img: AccaiLogo },
@@ -271,22 +304,21 @@ export const seriesGuide = [
 export const pentakuhlFaq = [
   {
     question: "What is Penta Kuhl?",
-    answer: "Penta Kuhl provides temperature-controlled packaging solutions.",
+    answer: "Penta Kuhl is an innovative logistics solution that integrates technology to optimize supply chain management and enhance efficiency.",
   },
   {
     question: "How does Penta Kuhl ensure cargo safety?",
-    answer: "We use advanced thermal packaging and monitoring systems.",
+    answer: "We utilize advanced tracking systems, secure storage facilities, and stringent handling protocols to ensure the safety of your cargo.",
   },
   {
     question: "What types of cargo can Penta Kuhl handle?",
-    answer: "We handle pharmaceuticals, biologics, and sensitive goods.",
+    answer: "Penta Kuhl is equipped to manage various cargo types, including perishable goods, heavy equipment, and general freight.",
   },
   {
-    question: "Is there customer support available?",
-    answer: "Yes, we provide 24/7 support for all clients.",
+    question: "Is there customer support available for Penta Kuhl users?",
+    answer: "Yes, our dedicated customer support team is available to assist you with any inquiries or issues regarding our services.",
   },
 ];
-
 
 export const industriesFaq = [
   {

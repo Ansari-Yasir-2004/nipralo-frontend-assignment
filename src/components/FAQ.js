@@ -9,9 +9,9 @@ const FAQ = ({ para, data }) => {
 
   return (
     <section className="py-16">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+      <div className="max-w-[1200px] mx-auto px-7 md:px-8">
 
-        <div className="flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
 
           {/* LEFT CONTENT */}
           <div className="lg:w-1/2">

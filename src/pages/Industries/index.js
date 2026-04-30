@@ -17,10 +17,10 @@ const Industries = () => {
           </p>
         </div>
 
-        <div className="max-w-[1300px] flex flex-wrap justify-evenly mx-auto">
+        <div className="w-full md:max-w-[1300px] flex flex-wrap justify-evenly mx-auto">
           {industriesCard.map((card) => (
-            <div key={card.id} className="md:h-[350px] md:w-[350px] h-[300px] w-[275px] flex justify-center items-center bg-transparent m-10 relative">
-              <div className="industries-card w-full h-full rounded-[16px]">
+            <div key={card.id} className="w-full lg:w-[350px] h-auto md:h-[250px] lg:h-[350px] flex justify-center items-center bg-transparent mx-6 my-5 md:mx-10 lg:m-10 relative">
+              <div className="industries-card w-full h-full rounded-[16px] py-10">
                 <div className="flex flex-col justify-center h-full gap-2 px-4 my-auto">
                   <div className="flex items-center gap-3">
                     <div className="w-max p-3 rounded-full border border-vivid-yangelo" style={{ background: "linear-gradient(344deg, rgba(255, 255, 255, 0) 0%, rgba(240, 108, 48, 0.796) 100%)" }}>

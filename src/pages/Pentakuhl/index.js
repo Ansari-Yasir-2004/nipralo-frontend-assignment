@@ -32,16 +32,16 @@ const Pentakuhl = () => {
             />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-1]"></div>
-          <div className="max-w-[60%] h-full flex flex-col justify-center items-center px-6 mx-auto">
+          <div className="w-full md:max-w-[80%] lg:max-w-[60%] h-full flex flex-col justify-center items-center px-6 mx-auto">
             <h1 className="text-center md:text-[48px] lg:text-[56px] text-[24px] text-white">
               Ensuring Safe Transport for Temperature-Sensitive Products
             </h1>
             <div className="border-b border-b-[#fff] w-full mt-10 mb-6"></div>
-            <div className="flex justify-between">
-              <p className="max-w-[60%] md:text-[23px] text-center md:text-left lg:text-left text-white">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="lg:max-w-[70%] xl:max-w-[60%] md:text-[22px] text-center md:text-left lg:text-left text-white">
                 Explore our frequently asked questions to gain clarity about Penta Kuhl’s services and features
               </p>
-              <a href="#pentakuhl-about-us" className="">
+              <a href="#pentakuhl-about-us" className="md:pt-0 pt-5">
                 <button
                   className='outline-0 bg-vivid-yangelo hover:bg-abstract-orange text-white font-medium px-6 py-4 rounded flex items-center transition ease-in-out'
                 >
@@ -58,12 +58,12 @@ const Pentakuhl = () => {
 
       {/* =============== ABOUT PENTAKUHL SECTION ================ */}
       <section className="pentakuhl-about-us-section" id='pentakuhl-about-us'>
-        <div className="flex text-gray-800 items-center justify-between w-[60%] mx-auto gap-5 py-20">
-          <div className="w-[25%] flex flex-col items-center">
+        <div className="w-[85%] lg:w-[60%] flex flex-col md:flex-row text-fiord items-center justify-between mx-auto gap-5 py-20">
+          <div className="w-[70%] md:w-[35%] lg:w-[25%] flex flex-col items-center">
             <h2 className="py-3 text-vivid-yangelo font-bold text-xl">ABOUT</h2>
             <p className="py-3 text-vivid-yangelo font-bold text-xl border-t-vivid-yangelo border-t-[3px]">PENTA KUHL</p>
           </div>
-          <div className="w-[70%]">
+          <div className="w-full md:w-[70%]">
             <p className="text-center md:text-start md:text-[20px] md:p-0 px-3 text-xl font-light text-fiord">
               At <span className="font-[700]">Pentakuhl</span>, we specialize in providing durable, effective packaging
               solutions that maintain temperature <span className="font-[700]">stability</span> during transit,
@@ -94,35 +94,38 @@ const Pentakuhl = () => {
       {/* =============== PRODUCT SOLUTIONS SECTION ================ */}
       <section className="pentakuhl-product-section">
         <div className="relative mx-auto my-8">
-          <div className="flex items-center justify-center text-[56px] text-black">Product Solutions</div>
-          <div className="flex justify-between">
-            <div className="w-[48%] z-10 my-8 shippers">
+          <div className="flex items-center justify-center text-[32px] md:text-[56px] text-black">Product Solutions</div>
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="w-full md:w-[48%] z-10 my-5 md:my-8 shippers">
               <div className="flex flex-col items-center py-10">
-                <h2 className="md:text-[36px] lg:text-[56px] mb-6">Parcel Shippers</h2>
-                <p className="text-[22px] text-center w-[90%]">
+                <h2 className="text-[24px] md:text-[36px] lg:text-[56px] mb-6">Parcel Shippers</h2>
+                <p className="md:text-[22px] text-center w-[90%]">
                   We understand the unique challenges faced by parcel shippers and offer tailored solutions for seamless shipping.
                 </p>
 
                 <div className="w-full flex flex-col gap-10 mt-10 justify md:px-6 lg:px-12">
                   <div className="grid p-3 shadow md:grid-cols-3">
-                    <div className="flex items-center">
-                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium">Single Use</h3>
+                    <div className="flex justify-center items-center col-span-2 md:col-span-1">
+                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium mb-4 md:mb-0">Single Use</h3>
                     </div>
-                    <div className="flex items-center justify-center border-l">
-                      <img src={CoolguardLogo} alt="coolguard logo" className='object-contain w-24 h-auto xl:w-26' />
-                    </div>
-                    <div className="flex justify-center border-l">
-                      <img src={CoolguardAdvanceLogo} alt="coolguard advance logo" className='object-contain w-24 h-auto xl:w-26' />
+                    <div className="col-span-2 flex justify-evenly">
+                      <div className="flex items-center justify-center sm:border-l">
+                        <img src={CoolguardLogo} alt="coolguard logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
+                      <div className="flex justify-center sm:border-l">
+                        <img src={CoolguardAdvanceLogo} alt="coolguard advance logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
                     </div>
                   </div>
 
                   <div className="grid p-3 shadow md:grid-cols-3">
-                    <div className="flex items-center">
-                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium">Reusable</h3>
+                    <div className="flex justify-center items-center col-span-2 md:col-span-1">
+                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium mb-4 md:mb-0">Reusable</h3>
                     </div>
-
-                    <div className="flex items-center justify-center border-l">
-                      <img src={CredoCubeLogo} alt="coolguard logo" className='object-contain w-24 h-auto xl:w-26' />
+                    <div className="col-span-2 flex justify-evenly">
+                      <div className="flex items-center justify-center sm:border-l">
+                        <img src={CredoCubeLogo} alt="credcube logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -133,38 +136,39 @@ const Pentakuhl = () => {
               </div>
             </div>
 
-
-            <div className="w-[48%] z-10 my-8 shippers">
+            <div className="w-full md:w-[48%] z-10 my-5 md:my-8 shippers">
               <div className="flex flex-col items-center py-10">
-                <h2 className="md:text-[36px] lg:text-[56px] mb-6">Pallet Shippers</h2>
-                <p className="text-[22px] text-center w-[90%]">
+                <h2 className="text-[24px] md:text-[36px] lg:text-[56px] mb-6">Pallet Shippers</h2>
+                <p className="md:text-[22px] text-center w-[90%]">
                   We provide tailored services for pallet shippers, ensuring your cargo arrives safely and efficiently.
                 </p>
 
                 <div className="w-full flex flex-col gap-10 mt-10 justify md:px-6 lg:px-12">
                   <div className="grid p-3 shadow md:grid-cols-3">
-                    <div className="flex items-center">
-                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium">Single Use</h3>
+                    <div className="flex justify-center items-center col-span-2 md:col-span-1">
+                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium mb-4 md:mb-0">Single Use</h3>
                     </div>
-                    <div className="flex items-center justify-center border-l">
-                      <img src={CoolpallLogo} alt="coolguard logo" className='object-contain w-24 h-auto xl:w-26' />
-                    </div>
-                    <div className="flex justify-center border-l">
-                      <img src={CoolpallAdvanceLogo} alt="coolguard advance logo" className='object-contain w-24 h-auto xl:w-26' />
+                    <div className="col-span-2 flex justify-evenly">
+                      <div className="flex items-center justify-center sm:border-l">
+                        <img src={CoolpallLogo} alt="coolpall logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
+                      <div className="flex justify-center sm:border-l">
+                        <img src={CoolpallAdvanceLogo} alt="coolpall advance logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
                     </div>
                   </div>
 
                   <div className="grid p-3 shadow md:grid-cols-3">
-                    <div className="flex items-center">
-                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium">Reusable</h3>
+                    <div className="flex justify-center items-center col-span-2 md:col-span-1">
+                      <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] pl-2 font-medium mb-4 md:mb-0">Reusable</h3>
                     </div>
-
-                    <div className="flex items-center justify-center border-l">
-                      <img src={CredoExtremeLogo} alt="coolguard logo" className='object-contain w-24 h-auto xl:w-26' />
-                    </div>
-
-                    <div className="flex justify-center border-l">
-                      <img src={CredoCargoLogo} alt="coolguard logo" className='object-contain w-24 h-auto xl:w-28' />
+                    <div className="col-span-2 flex justify-evenly">
+                      <div className="flex items-center justify-center sm:border-l">
+                        <img src={CredoExtremeLogo} alt="credo extreme Logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
+                      <div className="flex justify-center sm:border-l">
+                        <img src={CredoCargoLogo} alt="coolcargo logo" className='object-contain w-[120px] md:w-24 h-auto xl:w-26' />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -200,7 +204,7 @@ const Pentakuhl = () => {
               <div
                 key={index}
                 onMouseEnter={() => setActive(index)}
-                className={`flex-1 my-4 cursor-pointer text-sm md:text-base border-r last:border-r-0 transition
+                className={`w-1/2 md:w-auto md:flex-1 my-3 md:my-4 cursor-pointer text-sm md:text-base border-r last:border-r-0 transition
                 ${active === index ? "text-vivid-yangelo font-bold" : "text-black"}
                 `}
               >
