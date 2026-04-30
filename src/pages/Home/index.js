@@ -1,5 +1,4 @@
 import React from 'react'
-// import ScrollStack, { ScrollStackItem } from '../../components/ScrollStack'
 import LandingSectionVideo from "../../assets/videos/home-video.mp4"
 import LandingSectionArrowImg from "../../assets/images/png/landing-section-arrow-img.png"
 import HomeAboutUsSmokeImg from "../../assets/images/png/home-about-us-smoke-img.png"
@@ -14,6 +13,7 @@ import GlobalMapImg from "../../assets/images/webp/map.webp"
 import { awardCard, certificationSliderImg, reviewsCard } from '../../data'
 import CustomSwiper from '../../components/CustomSwiper'
 import "../../assets/styles/home.css"
+import CardStack from '../../components/CardStack'
 
 const Home = () => {
   return (
@@ -96,7 +96,8 @@ const Home = () => {
 
         {/* =============== CARD STACK PART ================ */}
         <div className="max-w-[1200px] mx-auto px-6 lg:px-14 xl:px-1">
-          <div className="card-stack-bg-img xl:h-[500px] bg-cover bg-left md:bg-center rounded-[30px] relative">
+          <CardStack />
+          {/* <div className="card-stack-bg-img xl:h-[500px] bg-cover bg-left md:bg-center rounded-[30px] relative">
             <div className="absolute inset-0 bg-black opacity-50 rounded-3xl md:hidden"></div>
             <div className="md:w-1/2 flex flex-col justify-center text-white md:text-black px-10 py-10 ml-auto relative">
               <h3 className="text-[24px] md:text-[32px] mb-2 lg:mb-5">Custom Broking</h3>
@@ -131,7 +132,7 @@ const Home = () => {
                 <span data-title="Let's go!">Read more</span>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* =============== WHY US PART ================ */}

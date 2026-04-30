@@ -13,6 +13,7 @@ import { seriesGuide, pentakuhlFaq } from '../../data'
 import FAQ from '../../components/FAQ'
 import ParallaxCTA from '../../components/ParallaxCTA'
 import PentakuhlParallax from "../../assets/images/jpg/pentakuhl-parallax.jpeg"
+import TextScroll from '../../components/TextScroll'
 
 const Pentakuhl = () => {
   const [active, setActive] = useState(0);
@@ -184,7 +185,7 @@ const Pentakuhl = () => {
 
       {/* =============== SERIES GUIDE SECTION ================ */}
       <section className="pentekuhl-series-guide-section">
-        <div className="max-w-[1200px] mx-auto px-7">
+        <div className="max-w-[1200px] mx-auto px-7 py-10">
 
           {/* Heading */}
           <div className="text-center">
@@ -223,6 +224,9 @@ const Pentakuhl = () => {
 
         </div>
       </section>
+
+      {/* =============== TEXT SCROLL SECTION ================ */}
+      <TextScroll />
 
       {/* =============== FAQ SECTION ================ */}
       <FAQ

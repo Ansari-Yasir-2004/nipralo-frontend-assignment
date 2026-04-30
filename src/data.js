@@ -38,6 +38,77 @@ import IndustriesElectronics from "./assets/images/png/industries-electronics.pn
 import WatsonPharmaceuticalsLogo from "./assets/images/png/watson-pharmaceuticals.png"
 import SunPharmaLogo from "./assets/images/png/sun-pharma.png"
 
+import CardStackImg from "./assets/images/jpg/card-stack-img.jpg"
+
+export const cardStackCards = [
+  {
+    id: 1,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+  {
+    id: 2,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+  {
+    id: 3,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+  {
+    id: 4,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+  {
+    id: 5,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+  {
+    id: 6,
+    imgSrc: CardStackImg,
+    title: "Custom Broking",
+    paras: [
+      "Our licensed customs agents know domestic and international regulations.",
+      "With 30+ years of experience, we have strong ties with authorities and handle all clearance challenges.",
+      "We ensure smooth, timely, and transparent cargo clearance. Our experts get your documentation right the first time.",
+    ],
+    points: ["Accuracy", "Compliance", "Speed", "Expertise"]
+  },
+]
+
 export const reviewsCard = [
   {
     id: 1,
