@@ -51,7 +51,7 @@ const TextScroll = () => {
   ];
 
   return (
-    <div ref={ref} className="py-10 md:py-20 min-h-[200vh]">
+    <div ref={ref} className="py-10 md:py-20">
 
       <Ticker
         items={row1}
